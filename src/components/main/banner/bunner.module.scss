@@ -1,0 +1,97 @@
+@import '../../../common/styles/style';
+
+.banner_container {
+  width: 100%;
+  height: 252px;
+  padding: 24px;
+  margin-bottom: 56px;
+  @include block;
+  justify-content: space-between;
+  background-color: $green_for_banner;
+  border-radius: 12px;
+}
+
+.banner_description {
+  width: 672px;
+  @include block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  h2 {
+    @include main_font;
+    color: $green_for_heading;
+    font-weight: 600;
+    font-size: px-to-rem(32px);
+    line-height: px-to-rem(48px);
+  }
+  p {
+    font-weight: 500;
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(36px);
+  }
+  button {
+    width: 156px;
+    height: 40px;
+    padding: 8px 32px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: $green_for_heading;
+    @include main_font;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.banner_img {
+  position: relative;
+  width: 336px;
+  height: 205px;
+  img {
+    top: -35px;
+    left: 40px;
+    width: 100%;
+    height: 261px;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .banner_img {
+    display: none;
+  }
+  .banner_container {
+    width: auto;
+    justify-content: center;
+  }
+  .banner_description {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .banner_container {
+    height: auto;
+  }
+  .logo {
+    margin-bottom: 16px;
+  }
+  .banner_description {
+   width: auto;
+    h2 {
+      font-size: px-to-rem(24px);
+      line-height: px-to-rem(36px);
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: px-to-rem(18px);
+      line-height: px-to-rem(27px);
+      margin-bottom: 16px;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}
+

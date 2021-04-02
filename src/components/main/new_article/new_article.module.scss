@@ -1,0 +1,29 @@
+@import '../../../common/styles/style';
+.new_article_container {
+  margin-bottom: 56px;
+}
+
+.new_badge {
+  margin-bottom: 16px;
+  float: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .new_article_container {
+    height: auto;
+    margin: 0 auto 23px;
+    @include block;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .new_article_container {
+    align-items: center;
+  }
+  .new_badge {
+    align-self: self-start;
+  }
+}

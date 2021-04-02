@@ -1,0 +1,51 @@
+@import '../../../common/styles/style';
+
+.top {
+  width: 100%;
+  @include block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 17px;
+
+  hr {
+    width: 100%;
+    margin-bottom: 16px;
+    border: 1px solid $gray;
+  }
+
+  p {
+    @include gray_font;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.top_articles_container {
+  width: 100%;
+  @include block;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+@media screen and (max-width: 1110px) {
+  .top_articles_container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+
+    img {
+      margin-right: 0;
+    }
+  }
+  .top {
+    width: 521px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top {
+    width: 336px;
+  }
+}

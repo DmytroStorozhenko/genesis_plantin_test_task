@@ -1,0 +1,78 @@
+@import '../../common/styles/style';
+
+.header {
+  @include block;
+  width: 100%;
+  height: 64px;
+  padding: 20px;
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1), 0 0.4px 6.5px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  top: 0;
+}
+
+.main_navbar {
+  @include block;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.first_block {
+  width: 560px;
+  @include block;
+  justify-content: space-between;
+}
+
+.nav_links {
+  @include main_font;
+  color: $black_one;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 498px;
+    li {
+      cursor: pointer;
+    }
+  }
+}
+
+.logo {
+  margin-right: 44px;
+}
+
+.buttons {
+  @include block;
+  justify-content: space-between;
+  align-items: center;
+  float: right;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.search {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.sandwich_menu {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .nav_links {
+    display: none;
+  }
+  .user_icon {
+    display: none;
+  }
+  .sandwich_menu {
+    display: block;
+  }
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+//variables
+$main_font: 'Poppins', sans-serif;
+$gray: #91A0B6;
+$green_for_heading: #04BF94;
+$green_for_banner: rgba(4, 191, 148, 0.16);
+$black_one: #262626;
+$black_two: #242424;
+$white: #FFFFFF;
+
+//mixins
+@function px-to-rem($size, $basicSize: 16px) {
+  @return $size / $basicSize#{rem};
+}
+
+@mixin block {
+  display: flex;
+  box-sizing: border-box;
+}
+
+@mixin main_font {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(24px);
+}
+
+@mixin gray_font {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(24px);
+  color: $gray;
+}
+
+@mixin footer_font {
+  @include gray_font;
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(20px);
+}
+
+@mixin basic_article_container {
+  width: 336px;
+  height: 404px;
+  @include block;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 32px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  img {
+    width: 337px;
+    height: 240px;
+    margin-bottom: 16px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+
+    span {
+      @include gray_font
+    }
+
+    h3 {
+      @include main_font;
+      font-weight: 700;
+      font-size: px-to-rem(24px);
+      line-height: px-to-rem(36px);
+      text-align: left;
+      padding-bottom: 8px;
+    }
+
+    p {
+      width: auto;
+      height: auto;
+      @include gray_font;
+      text-align: left;
+    }
+  }
+}
+

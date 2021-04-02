@@ -1,0 +1,50 @@
+@import '../../../common/styles/style';
+
+.articles {
+  @include block;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+}
+
+.interesting {
+  hr {
+    width: 100%;
+    margin-bottom: 16px;
+    border: 1px solid $gray;
+  }
+    p {
+      margin-bottom: 17px;
+      @include gray_font;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+@media screen and (max-width: 1100px) {
+  .article_block_container {
+    width: 100%;
+    @include block;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .interesting {
+      width: 700px;
+    margin-right: 25px;
+  }
+  .articles {
+    justify-content: center;
+  }
+ }
+
+@media screen and (max-width: 782px) {
+  .article_block_container {
+
+  }
+  .interesting {
+    width: 336px;
+    margin-right: 25px;
+  }
+}
