@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/genesis_plantin_test_task/static/css/main.cee019dc.chunk.css",
+    "main.js": "/genesis_plantin_test_task/static/js/main.73fc41c2.chunk.js",
+    "main.js.map": "/genesis_plantin_test_task/static/js/main.73fc41c2.chunk.js.map",
+    "runtime-main.js": "/genesis_plantin_test_task/static/js/runtime-main.0caf4e81.js",
+    "runtime-main.js.map": "/genesis_plantin_test_task/static/js/runtime-main.0caf4e81.js.map",
+    "static/js/2.2b8566d1.chunk.js": "/genesis_plantin_test_task/static/js/2.2b8566d1.chunk.js",
+    "static/js/2.2b8566d1.chunk.js.map": "/genesis_plantin_test_task/static/js/2.2b8566d1.chunk.js.map",
+    "static/js/3.be098c5e.chunk.js": "/genesis_plantin_test_task/static/js/3.be098c5e.chunk.js",
+    "static/js/3.be098c5e.chunk.js.map": "/genesis_plantin_test_task/static/js/3.be098c5e.chunk.js.map",
+    "index.html": "/genesis_plantin_test_task/index.html",
+    "static/css/main.cee019dc.chunk.css.map": "/genesis_plantin_test_task/static/css/main.cee019dc.chunk.css.map",
+    "static/js/2.2b8566d1.chunk.js.LICENSE.txt": "/genesis_plantin_test_task/static/js/2.2b8566d1.chunk.js.LICENSE.txt",
+    "static/media/banner.30a39a3c.png": "/genesis_plantin_test_task/static/media/banner.30a39a3c.png",
+    "static/media/basic_article_image_1.f63a31a6.svg": "/genesis_plantin_test_task/static/media/basic_article_image_1.f63a31a6.svg",
+    "static/media/basic_article_image_2.50445dc8.svg": "/genesis_plantin_test_task/static/media/basic_article_image_2.50445dc8.svg",
+    "static/media/basic_article_image_3.a994647d.svg": "/genesis_plantin_test_task/static/media/basic_article_image_3.a994647d.svg",
+    "static/media/girl.65bf6d75.svg": "/genesis_plantin_test_task/static/media/girl.65bf6d75.svg",
+    "static/media/new_article_image.7c2edad7.png": "/genesis_plantin_test_task/static/media/new_article_image.7c2edad7.png",
+    "static/media/search_input.b4c9458b.svg": "/genesis_plantin_test_task/static/media/search_input.b4c9458b.svg",
+    "static/media/top_article_image_1.9d6eec18.svg": "/genesis_plantin_test_task/static/media/top_article_image_1.9d6eec18.svg",
+    "static/media/top_article_image_2.e84154ce.svg": "/genesis_plantin_test_task/static/media/top_article_image_2.e84154ce.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0caf4e81.js",
+    "static/js/2.2b8566d1.chunk.js",
+    "static/css/main.cee019dc.chunk.css",
+    "static/js/main.73fc41c2.chunk.js"
+  ]
+}
